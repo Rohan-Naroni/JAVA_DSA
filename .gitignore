@@ -8,3 +8,9 @@
 /.idea/.gitignore
 /out/production/DSA/.idea/.gitignore
 /out/production/DSA/DSA.iml
+# Ignore entire out directory (compiled Java output)
+out/
+
+# Ignore IntelliJ IDEA config and project files
+.idea/
+*.iml
