@@ -26,15 +26,15 @@ public class Duplicate {
 //        Two Pointer approch(slow fast pointer)
 //    time complexity is O(N)
 
-    public static int duplicate(int a[]) {
+    public static int duplicate(int arr[]) {
 
 
 
         int i = 0; // slow pointer
 
-        for (int j = 0; j < a.length; j++) {
-            if (a[i] != a[j]) {
-                a[i + 1] = a[j];
+        for (int j = 0; j < arr.length; j++) {
+            if (arr[i] != arr[j]) {
+                arr[i + 1] = arr[j];
                 i++;
             }
 
@@ -45,11 +45,11 @@ public class Duplicate {
 
     public static void main(String[] args) {
 
-        int a[] = {1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6};
-        int res = duplicate(a);
+        int arr[] = {1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6};
+        int res = duplicate(arr);
 
         for (int i =0; i<res; i++){
-            System.out.println(a[i]);
+            System.out.println(arr[i]);
         }
 
 
